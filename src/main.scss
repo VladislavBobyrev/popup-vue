@@ -1,0 +1,75 @@
+$style-common: "./modules/ common/style/";
+//=====================================================
+//                 ШРИФТЫ
+//=====================================================
+// @import "./modules/common/fonts/fonts"; // Локальное подключение
+
+//=====================================================
+//                 THEME
+//=====================================================
+@import "./modules/common/style/theme/vriable";
+
+//=====================================================
+//                 MIXIN
+//=====================================================
+@import "./modules/common/style/mixin/scroll";
+
+//=====================================================
+//                 FUNCTIONS
+//=====================================================
+@import "./modules/common/style/functions/adaptiveFZ";
+
+//=====================================================
+//                 KEYFRAMES
+//=====================================================
+@import "./modules/common/style/keyframes/rotate360";
+
+//=====================================================
+//                 UTILS
+//=====================================================
+@import "./modules/common/style/utils/normalize";
+
+//=====================================================
+//                 UI
+//=====================================================
+@import "./modules/common/style/ui/background";
+@import "./modules/common/style/ui/color";
+@import "./modules/common/style/ui/svg";
+@import "./modules/common/style/ui/button";
+@import "./modules/common/style/ui/disabled";
+
+//=====================================================
+//                 GLOBAL
+//=====================================================
+html {
+  display: flex; // Адаптиция под мобильные устройства
+  min-height: -webkit-fill-available; // Адаптиция под мобильные устройства
+  overflow: hidden;
+}
+// Для правной смены цветовых тем
+html.color-theme-in-transition,
+html.color-theme-in-transition * {
+  transition: 200ms;
+  transition-delay: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh) * 100);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg-primary;
+  color: $color-secondary;
+  font-family: "Open Sans";
+  position: relative;
+}
+
+#app {
+  overflow: auto;
+  height: 100%;
+}

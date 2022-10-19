@@ -1,0 +1,157 @@
+// устанавливаем  стили для коректрой работы
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  // &:active,
+  // &:hover {
+  //   outline: 0;
+  // }
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+img,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio,
+canvas,
+iframe,
+video,
+img,
+svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none; /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+input,
+textarea,
+select,
+button {
+  border: none;
+  font-size: 100%;
+}
+button,
+input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  text-align: left;
+}
+
+details,
+main {
+  display: block;
+}
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+template,
+[hidden] {
+  display: none;
+}
